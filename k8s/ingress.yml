@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: csgo-statistcs
+  annotations:
+    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+spec:
+  rules:
+  - host: csgo-statistcs.vassopoli.com.br
+    http:
+      paths:
+      - pathType: Prefix
+        path: /
+        backend:
+          service:
+            name: csgo-statistcs
+            port:
+              number: 80
+      - pathType: Prefix
+        path: /*
+        backend:
+          service:
+            name: csgo-statistcs
+            port:
+              number: 80

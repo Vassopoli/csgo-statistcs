@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: csgo-statistcs
+  labels:
+    name: csgo-statistcs
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: csgo-statistcs
+  template:
+    metadata:
+      labels:
+        name: csgo-statistcs
+    spec:
+      containers:
+        - name: csgo-statistcs
+          image: vassopoli/csgo-statistcs:latest
+          ports:
+          - containerPort: 80
+          resources:
+            limits:
+              cpu: "0.01"
+              memory: "128Mi"
