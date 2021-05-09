@@ -3,17 +3,10 @@ import { ResponsiveCalendar } from '@nivo/calendar'
 
 export default class HeatMapCalendar extends React.Component {
     private data = [
-        {day: '2021-04-06', value: 2},
-        {day: '2021-04-07', value: 7},
-        {day: '2021-04-08', value: 2},
-        {day: '2021-04-09', value: 4},
-        {day: '2021-04-12', value: 2},
-        {day: '2021-04-13', value: 3},
-        {day: '2021-04-15', value: 5},
-        {day: '2021-04-20', value: 1},
-        {day: '2021-04-28', value: 1},
-        {day: '2021-04-29', value: 15},
-        {day: '2021-04-30', value: 3}
+        {day: '2021-05-05', value: 1},
+        {day: '2021-05-06', value: 2},
+        {day: '2021-05-07', value: 1},
+        {day: '2021-05-08', value: 2}
     ]
     
     public render() {
