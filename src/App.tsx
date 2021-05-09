@@ -9,7 +9,6 @@ export default class App extends React.Component {
             <div className="App">
                 <header className="App-header">
                     <h1 className="App-title">CSGO Statistcs</h1>
-                    <p>TOA CSGO statistcs</p>
                 </header>
                 <HeatMapCalendar />
                 <Footer />
