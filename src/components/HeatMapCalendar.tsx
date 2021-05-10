@@ -6,7 +6,8 @@ export default class HeatMapCalendar extends React.Component {
         {day: '2021-05-05', value: 1},
         {day: '2021-05-06', value: 2},
         {day: '2021-05-07', value: 1},
-        {day: '2021-05-08', value: 2}
+        {day: '2021-05-08', value: 2},
+        {day: '2021-05-09', value: 1}
     ]
     
     public render() {
